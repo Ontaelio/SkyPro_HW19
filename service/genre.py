@@ -11,7 +11,7 @@ class GenreService:
     def get_all(self):
         return self.dao.get_all()
 
-    def create(self, genre_d):
+    def add_one(self, genre_d):
         return self.dao.create(genre_d)
 
     def update(self, genre_d):

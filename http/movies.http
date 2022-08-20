@@ -1,0 +1,52 @@
+GET http://localhost:10001/movies/
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjEwMDQyMDR9.rI-wUgO8MoxJHgOnOo_pzEsXqG5DQ0BRFecucpSSqY4
+
+###
+
+GET http://localhost:10001/movies/20
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkthbGlha2EyMzMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MTAwNTg1NH0.KqME78s6Dieh9IltwiSr4X52XGqjIroIhXpP0DvSUMM
+
+###
+
+POST http://localhost:10001/directors/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjEwMDQyMDR9.rI-wUgO8MoxJHgOnOo_pzEsXqG5DQ0BRFecucpSSqY4
+
+{
+  "name": "Тим Бёртон"
+}
+
+###
+
+GET http://localhost:10001/directors/
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjEwMDQyMDR9.rI-wUgO8MoxJHgOnOo_pzEsXqG5DQ0BRFecucpSSqY4
+
+###
+
+GET http://localhost:10001/genres/
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjEwMDQyMDR9.rI-wUgO8MoxJHgOnOo_pzEsXqG5DQ0BRFecucpSSqY4
+
+###
+
+DELETE http://localhost:10001/movies/21
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjEwMDQyMDR9.rI-wUgO8MoxJHgOnOo_pzEsXqG5DQ0BRFecucpSSqY4
+
+###
+
+POST http://localhost:10001/movies/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IkthbGlha2EyMzMiLCJyb2xlIjoidXNlciIsImV4cCI6MTY2MTAwNTg1NH0.KqME78s6Dieh9IltwiSr4X52XGqjIroIhXpP0DvSUMM
+
+{
+  "title": "Марс Атакует!",
+  "description": "Сначала они пришли за коровами... А потом придут за тобой!!!111",
+  "trailer": "https://www.youtube.com/watch?v=DqtjHWlM4lQ",
+  "year": 1996,
+  "rating": 6.4,
+  "genre_id": 1,
+  "director_id": 21
+}
