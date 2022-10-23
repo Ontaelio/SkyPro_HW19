@@ -1,0 +1,48 @@
+GET http://localhost:10001/users/
+Accept: application/json
+
+###
+
+POST http://localhost:10001/users/
+Content-Type: application/json
+
+{
+  "username": "Kaliaka233",
+  "password": "qwerty",
+  "role": "user"
+}
+
+###
+
+POST http://localhost:10001/auth/
+Content-Type: application/json
+
+{
+  "username": "ZlojDed",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:10001/auth/
+Content-Type: application/json
+
+{
+  "username": "Kaliaka233",
+  "password": "qwerty"
+}
+
+###
+
+DELETE http://localhost:10001/users/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjEwMDQyMDR9.rI-wUgO8MoxJHgOnOo_pzEsXqG5DQ0BRFecucpSSqY4
+
+###
+
+PUT http://localhost:10001/auth/
+Content-Type: application/json
+
+{
+  "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ilpsb2pEZWQiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NzIyMzUxODV9.WCAjkqF8ZUilB6v_0wDRKs2mYeBEUzHBmlmXESPL7Jw"
+}
